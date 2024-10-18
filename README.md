@@ -1,0 +1,1 @@
+I felt my education did too little to the frontend of development other than what I taught myself during my BSc assignmment. So I wanted to learn more and this is from my own learning and Udemy courses. 
