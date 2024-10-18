@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortcuts</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url("Star-Background.jpeg");
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 500%;
+        color: rgb(34, 193, 195);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        margin-bottom: 40px;
+      }
+
+      h1:hover {
+        color: rgb(253, 187, 45);
+        transition: color 0.3s ease;
+      }
+
+      /* Section container */
+      .shortcut-sections {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      /* Individual shortcut boxes */
+      .shortcut-box {
+        width: 30%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        height: auto;
+      }
+
+      /* Section titles */
+      .shortcut-title {
+        text-align: center;
+        margin: 0 0 10px;
+        font-size: 400%;
+        text-decoration: underline;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9),
+          6px 6px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      /* Links in each section */
+      .shortcut-links {
+        text-align: center;
+        font-size: 250%;
+      }
+
+      .shortcut-box a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 10px 0;
+      }
+
+      .shortcut-box a:visited {
+        color: lightpurple;
+      }
+
+      .shortcut-box a:hover {
+        color: rgb(253, 187, 45);
+        transition: color 0.3s ease;
+      }
+
+      .shortcut-box a:hover {
+        text-decoration: underline;
+      }
+
+      /* Background images for each section */
+      .star-citizen {
+        background-image: url("Star Citizen.jpg");
+      }
+
+      .coding {
+        background-image: url("Coding.jpg");
+      }
+
+      .food {
+        background-image: url("Food.jpg");
+      }
+
+      /* Full-width section for Miscellaneous */
+      .full-width-element {
+        width: 100%;
+        background-image: url("Water.jpg");
+        text-decoration: underline;
+        padding: 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .full-width-element h2 {
+        font-size: 350%;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9),
+          6px 6px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      .full-width-element a {
+        font-size: 200%;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px 20px;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9),
+          6px 6px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      .full-width-element a:hover {
+        color: rgb(253, 187, 45);
+      }
+
+      /* Ripple effect styles */
+      .ripple {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(0, 255, 255, 0.1); /* Lighter cyan, 100% opacity */
+        background-size: cover; /* Ensures the image fits the ripple */
+        transform: scale(0);
+        animation: ripple-animation 1.4s ease-out;
+        pointer-events: none;
+      }
+
+      @keyframes ripple-animation {
+        to {
+          transform: scale(0.1); /* Expands the ripple to a medium size */
+          opacity: 0;
+        }
+      }
+
+      /* Adjust for mobile */
+      @media (max-width: 768px) {
+        .shortcut-sections {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .shortcut-boxes {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shortcuts</h1>
+
+    <div class="shortcut-sections">
+      <!-- Star Citizen Section -->
+      <div class="shortcut-box star-citizen">
+        <h2 class="shortcut-title">Star Citizen</h2>
+        <div class="shortcut-links">
+          <a href="https://www.robertsspaceindustries.com" target="_blank"
+            >Robert Space Industries Website</a
+          >
+          <a
+            href="https://robertsspaceindustries.com/spectrum/community/SC"
+            target="_blank"
+            >RSI Spectrum</a
+          >
+          <a href="https://starcitizen.tools" target="_blank"
+            >Star Citizen Tools</a
+          >
+          <a href="https://finder.cstone.space/" target="_blank"
+            >Star Citizen Item Finder</a
+          >
+          <a href="https://sc-trade.tools/home" target="_blank"
+            >SC Trade Tools</a
+          >
+          <a href="https://www.erkul.games/" target="_blank">Erkul</a>
+          <a href="https://verseguide.com/" target="_blank">Verse-Guides</a>
+          <a href="https://fleetyards.net/login/" target="_blank"
+            >Fleet Yards</a
+          >
+          <a href="https://www.spviewer.eu/" target="_blank">Ship Viewer</a>
+        </div>
+      </div>
+
+      <!-- Coding Section -->
+      <div class="shortcut-box coding">
+        <h2 class="shortcut-title">Coding</h2>
+        <div class="shortcut-links">
+          <a href="https://github.com/Lotheraz" target="_blank">GitHub</a>
+          <a href="https://chatgpt.com/" target="_blank">Chatgtp</a>
+          <a href="https://www.udemy.com/" target="_blank">Udemy</a>
+          <a href="https://www.freecodecamp.org/" target="_blank"
+            >Freecodecamp</a
+          >
+          <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>
+        </div>
+      </div>
+
+      <!-- Food Section -->
+      <div class="shortcut-box food">
+        <h2 class="shortcut-title">Food</h2>
+        <div class="shortcut-links">
+          <a href="https://www.allrecipes.com" target="_blank">All Recipes</a>
+          <a href="https://www.foodnetwork.com" target="_blank">Food Network</a>
+          <a
+            href="https://www.gastroroyal.no/produkter/tilbehor"
+            target="_blank"
+            >Gastro Royal</a
+          >
+          <a href="https://www.facebook.com/primavestfold.no" target="_blank"
+            >Prima Vestfold</a
+          >
+          <a href="https://krydra.no/" target="_blank">Krydra</a>
+          <a href="https://bbqshop.no/" target="_blank">BBQShop</a>
+        </div>
+      </div>
+    </div>
+    <!-- Full width element for Miscellaneous -->
+    <div class="full-width-element">
+      <h2>Miscellaneous</h2>
+      <a href="https://www.google.com" target="_blank">Google</a>
+      <a href="https://www.youtube.com" target="_blank">YouTube</a>
+      <a href="https://www.komplett.no" target="_blank">Komplett</a>
+      <a href="https://www.prisjakt.no" target="_blank">Prisjakt</a>
+      <a href="https://www.dagbladet.no/" target="_blank">Dagbladet</a>
+      <a href="https://vg.no/" target="_blank">VG</a>
+      <a href="https://tb.no/" target="_blank" class="tonsbergs-blad-link"
+        >Tønsbergs Blad</a
+      >
+      <a href="https://fitgirl-repacks.site/" target="_blank">Cracked Games</a>
+    </div>
+
+    <script>
+      document
+        .querySelector(".full-width-element")
+        .addEventListener("mouseover", function (e) {
+          const circle = document.createElement("span");
+          circle.classList.add("ripple");
+
+          const rect = this.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+
+          circle.style.width = circle.style.height = `${size}px`;
+          circle.style.left = `${e.clientX - rect.left - size / 2}px`;
+          circle.style.top = `${e.clientY - rect.top - size / 2}px`;
+
+          this.appendChild(circle);
+
+          // Remove the ripple after the animation is done
+          setTimeout(() => {
+            circle.remove();
+          }, 600); // Match the duration of the ripple animation
+        });
+    </script>
+  </body>
+</html>
