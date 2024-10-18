@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <link
-      href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
       rel="stylesheet"
     />
+
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shortcuts</title>
+    <title>Backup to Shortcuts</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -138,8 +140,8 @@
       .ripple {
         position: absolute;
         border-radius: 50%;
-        background: rgba(0, 255, 255, 0.1); /* Lighter cyan, 100% opacity */
-        background-size: cover; /* Ensures the image fits the ripple */
+        background: rgba(0, 255, 255, 0.1); /* Lighter cyan */
+        background-size: cover;
         transform: scale(0);
         animation: ripple-animation 1.4s ease-out;
         pointer-events: none;
@@ -147,7 +149,7 @@
 
       @keyframes ripple-animation {
         to {
-          transform: scale(0.1); /* Expands the ripple to a medium size */
+          transform: scale(0.2); /* Increase the scale to cover more area */
           opacity: 0;
         }
       }
@@ -163,12 +165,12 @@
           width: 100%;
         }
       }
-        .tonsbergs-blad-link {
-        font-family: "UnifrakturMaguntia", cursive;
-        font-size: 2em; /* Adjust the size as needed */
-        color: #1a2c4b; /* Dark blue */
+      .tonsbergs-blad-link {
+        font-family: "Cinzel", serif;
+        font-size: 2em;
+        color: #1a2c4b;
         text-transform: uppercase;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adds a shadow for a pop effect */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
       }
     </style>
   </head>
@@ -187,6 +189,11 @@
             href="https://robertsspaceindustries.com/spectrum/community/SC"
             target="_blank"
             >RSI Spectrum</a
+          >
+          <a
+            href="https://docs.google.com/document/d/126-74rlEYvPpaVaXLiceWhsPAx99IVrHXY3xLhN0gc8/edit?tab=t.0#heading=h.vczmypjbfqvb"
+            target="_blank"
+            >Iron Vanguard Loadouts</a
           >
           <a href="https://starcitizen.tools" target="_blank"
             >Star Citizen Tools</a
@@ -251,18 +258,18 @@
       <a href="https://tb.no/" target="_blank" class="tonsbergs-blad-link"
         >Tønsbergs Blad</a
       >
-     
     </div>
 
     <script>
       document
         .querySelector(".full-width-element")
-        .addEventListener("mouseover", function (e) {
+        .addEventListener("mousemove", function (e) {
+          // Changed to 'mousemove' from mouse moveover
           const circle = document.createElement("span");
           circle.classList.add("ripple");
 
           const rect = this.getBoundingClientRect();
-          const size = Math.max(rect.width, rect.height);
+          const size = Math.max(rect.width, rect.height); // Ensure ripple size is calculated from both width and height
 
           circle.style.width = circle.style.height = `${size}px`;
           circle.style.left = `${e.clientX - rect.left - size / 2}px`;
@@ -273,7 +280,7 @@
           // Remove the ripple after the animation is done
           setTimeout(() => {
             circle.remove();
-          }, 600); // Match the duration of the ripple animation
+          }, 1400); // Match the duration of the ripple animation
         });
     </script>
   </body>
