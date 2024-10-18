@@ -163,6 +163,13 @@
           width: 100%;
         }
       }
+        .tonsbergs-blad-link {
+        font-family: "UnifrakturMaguntia", cursive;
+        font-size: 2em; /* Adjust the size as needed */
+        color: #1a2c4b; /* Dark blue */
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adds a shadow for a pop effect */
+      }
     </style>
   </head>
   <body>
